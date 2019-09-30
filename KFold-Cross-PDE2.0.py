@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 
-dataset=pd.read_csv('data/PDE_R2_0.csv')
+dataset=pd.read_csv('PDE_R2_0.csv')
 y=dataset['bug_cnt']
 dataset.drop(['bug_cnt'], axis=1, inplace=True)
 x_columns = dataset.columns
